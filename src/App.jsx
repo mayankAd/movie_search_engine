@@ -22,14 +22,14 @@ function App() {
     <div>
       <div className="flex flex-col gap-20 items-center bg-[url('/bgImage.jpg')]">
         <div className="flex flex-col items-center h-[200px] gap-10 bg-black w-[100%] border-gray-700 border-b-8">
-          <div className="flex items-center gap-10">
-        <h1 className="font-bold text-[40px] text-white">Movie Search Engine</h1>
-        <div className="h-[100px]">
+          <div className="flex items-center gap-3 sm:gap-10">
+        <h1 className="font-bold text-[30px] md:text-[50px] text-white">Movie Search Engine</h1>
+        <div className="h-[50px] md:h-[100px]">
         <img className="object-contain h-[100%]" src="movie-icon-6.png" alt="" />
         </div>
         </div>
         <div className="flex gap-5">
-          <input className="h-10 w-[400px] rounded-lg"
+          <input className="h-10 w-[200px] md:w-[400px] rounded-lg pl-4"
             placeholder="Search for movies"
             value={searchTerm}
             onChange={(e) => {
